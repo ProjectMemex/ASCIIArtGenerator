@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text to ASCII Art</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/figlet@1.5.2/umd/figlet.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Text to ASCII Art</h1>
+    <textarea id="inputText" placeholder="Enter text here..."></textarea>
+
+    <div class="controls">
+      <label for="fontSelect">Font:</label>
+      <select id="fontSelect">
+        <option value="Standard">Standard</option>
+        <option value="Ghost">Ghost</option>
+        <option value="Slant">Slant</option>
+        <option value="Big">Big</option>
+        <option value="Banner">Banner</option>
+      </select>
+      <button onclick="convertText()">Convert</button>
+      <button onclick="copyArt()">Copy</button>
+    </div>
+
+    <pre id="outputArt"></pre>
+  </div>
+
+  <!-- EthicalAds Block -->
+  <div class="ad-block">
+    <script async type="text/javascript" src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
+    <div data-ea-publisher="your-publisher-id" data-ea-type="image"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
